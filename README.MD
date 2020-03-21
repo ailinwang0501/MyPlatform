@@ -37,3 +37,11 @@ git diff HEAD -- <file> //查看工作区和版本库里最新版本的区别
 git checkout -- <file>  //用版本库的版本替换工作区的版本，无论是工作区的修改还是删除，都可以'一键还原'
 git reset HEAD <file>   //把暂存区的修改撤销掉，重新放回工作区。
 git remote rm <file>           //删除文件，若文件已提交到版本库，不用担心误删，但是只能恢复文件到最新版本
+
+1、git pull origin master --allow-unrelated-histories //把远程仓库和本地同步，消除差异
+
+2、重新add和commit相应文件
+
+3、git push origin master
+
+4、此时就能够上传成功了
